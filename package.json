@@ -1,0 +1,25 @@
+{
+  "name": "javascripttasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaleemSamaldeen/JavascriptTasks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaleemSamaldeen/JavascriptTasks/issues"
+  },
+  "homepage": "https://github.com/SaleemSamaldeen/JavascriptTasks#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.4",
+    "typescript": "^5.3.3"
+  }
+}
