@@ -13,7 +13,7 @@ Assignment: 1 Create Lead
 9. Click Save and Verify Leads name created}
 */
 
-test.skip('Create Lead in salesforce', async() => {
+test('Create Lead in salesforce', async() => {
     test.setTimeout(90000);
     const browserInitiate = await chromium.launch({channel:'chrome', headless:false});
     const browserContext = await browserInitiate.newContext();
