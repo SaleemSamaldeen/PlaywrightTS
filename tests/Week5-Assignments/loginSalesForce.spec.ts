@@ -7,4 +7,6 @@ test('Login with test data json file', async({page,context}) => {
     await page.waitForLoadState('load');
     await page.fill('#username',loginData.username);
     await page.fill('#password',loginData.password);
+    await page.click('#Login');
+    await page.waitForLoadState('load');
 });
