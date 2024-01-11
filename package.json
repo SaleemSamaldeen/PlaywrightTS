@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test"
+    "test": " npx playwright test",
+    "pretest": "test_env=uatnpx playwright test"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,9 @@
   "devDependencies": {
     "@playwright/test": "^1.40.1",
     "@types/node": "^20.10.4",
-    "typescript": "^5.3.3",
+    "cross-env": "^7.0.3",
     "csv": "^6.3.6",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "typescript": "^5.3.3"
   }
 }

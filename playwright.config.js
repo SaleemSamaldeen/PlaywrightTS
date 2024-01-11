@@ -13,7 +13,9 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
   testDir: './tests',
   timeout: 60 *1000,
-  expect: { timeout: 60 * 10000 },
+  expect: { 
+    timeout: 60 * 10000 
+  },
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -81,5 +83,6 @@ module.exports = defineConfig({
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
+  globalSetup:'./tests/utils/globalSetup.ts'
 });
 
