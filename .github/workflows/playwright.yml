@@ -1,9 +1,11 @@
 name: Playwright Tests
+#when to trigger our test?
 on:
   push:
-    branches: [ main, master ]
+    branches: [ master ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ master ]
+#where, How and what to run?
 jobs:
   test:
     timeout-minutes: 60
