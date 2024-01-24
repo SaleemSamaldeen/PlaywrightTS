@@ -3,10 +3,9 @@ import dotenv from 'dotenv';
 
 async function globalSetup(config:FullConfig) {
 
-    if(process.env.test_env) {
+    if(process.env.test) {
         dotenv.config({
-            path: `../resources/.env.${process.env.test_env}`,
-            override:true
+            path: `../resources/.${process.env.test}`,
         })
     }
     

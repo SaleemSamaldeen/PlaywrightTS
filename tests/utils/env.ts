@@ -1,5 +1,5 @@
-export class Environment {
-    public static baseURL = process.env.base_URL;
-    public static userName = process.env.username;
-    public static passWord = process.env.password;
+export class ENVIRONMENT {
+    public static BASEURL = process.env.BASE_URL;
+    public static USERNAME = process.env.USERNAME;
+    public static PASSWORD = process.env.PASSWORD;
 }
