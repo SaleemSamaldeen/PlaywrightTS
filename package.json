@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": " npx playwright test",
-    "pretest": "test_env=uatnpx playwright test"
+    "pretest": "cross-env test_env=uat npx playwright test"
   },
   "repository": {
     "type": "git",
