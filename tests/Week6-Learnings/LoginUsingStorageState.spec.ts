@@ -3,7 +3,7 @@ import path from "path";
 
 console.log(path.join(__dirname,'sfLoginData.json'));
 test.use({storageState:path.join(__dirname,'../storeData/sfLoginData.json')});
-test.only('Login Using saved Storage State', async({page}) => {
+test('Login Using saved Storage State', async({page}) => {
     await page.goto("https://testleaf-12a-dev-ed.develop.lightning.force.com/lightning/setup/SetupOneHome/home")
     await page.waitForLoadState('load');
     await page.click("//button[text()='View All']");

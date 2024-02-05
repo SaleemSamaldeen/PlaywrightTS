@@ -1,7 +1,7 @@
 import test, { chromium, expect } from "@playwright/test";
 
 
-test.only('Create Lead in salesforce and store storage state', async({page}) => {
+test('Create Lead in salesforce and store storage state', async({page}) => {
     test.setTimeout(90000);
     await page.goto('https://login.salesforce.com');
     await page.waitForLoadState('load');
