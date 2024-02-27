@@ -19,7 +19,7 @@ http://leaftaps.com/opentaps/control/main
 14.Click Update
 */
 
-test("Edit Lead", async()=>{
+test.only("Edit Lead", async()=>{
     test.setTimeout(120000);
     const browser = await chromium.launch({channel:"chrome", headless:false})
     const browserContext = await browser.newContext();

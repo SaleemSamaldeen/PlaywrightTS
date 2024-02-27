@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test mergeContact.spec.ts",
+    "test": "npx playwright test editLead.spec.ts",
     "env:dev": "cross-env ENV=dev npx playwright test loginWithEnvVariables.spec.ts",
     "env:uat": "cross-env ENV=uat npx playwright test loginWithEnvVariables.spec.ts"
   },
