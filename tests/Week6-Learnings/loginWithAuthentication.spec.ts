@@ -1,6 +1,6 @@
 import test, { chromium, firefox } from "@playwright/test";
 
-    test.only(`Login using basic authentication`, async() => {
+    test(`Login using basic authentication`, async() => {
     const directory = './myUserDataDir';
     const context =  await chromium.launchPersistentContext(directory, {
         headless: false,

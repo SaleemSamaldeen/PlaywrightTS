@@ -1,7 +1,7 @@
 import test, { chromium } from "@playwright/test";
 import { ENVIRONMENT} from "../utils/env";
 
-    test.only(`Login using dotenv and environment variables`, async({page}) => {
+    test(`Login using dotenv and environment variables`, async({page}) => {
     console.log(ENVIRONMENT.USERNAME);
     console.log(ENVIRONMENT.PASSWORD);
     

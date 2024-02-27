@@ -12,7 +12,7 @@ import path from "path";
 //   Hint : use page.focus(selector) to scroll to view the element - uploadfiles 
 // 7.Verify the toast message
 
-test.only('Upload files', async({page}) => {
+test('Upload files', async({page}) => {
     test.setTimeout(90000);
     await page.goto('https://login.salesforce.com');
     await page.waitForLoadState('load');
