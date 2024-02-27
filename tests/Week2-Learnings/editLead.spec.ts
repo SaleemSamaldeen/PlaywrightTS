@@ -21,7 +21,7 @@ http://leaftaps.com/opentaps/control/main
 
 test.only("Edit Lead", async()=>{
     test.setTimeout(120000);
-    const browser = await chromium.launch({channel:"chrome", headless:false})
+    const browser = await chromium.launch({channel:"chrome", headless:true})
     const browserContext = await browser.newContext();
     const page = await browserContext.newPage();
     page.goto("http://leaftaps.com/opentaps/control/main");
