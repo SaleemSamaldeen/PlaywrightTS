@@ -21,7 +21,7 @@ test('Create Lead in salesforce', async() => {
     await page.goto('https://login.salesforce.com');
     await page.waitForLoadState('load');
     await page.fill('#username','saleem@testleaf.com');
-    await page.fill('#password','Shazia@23');
+    await page.fill('#password','Password@23');
     await page.click('#Login');
     await page.click("div[class='slds-icon-waffle']");
     await page.waitForLoadState('load');
