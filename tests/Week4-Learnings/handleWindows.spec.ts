@@ -11,7 +11,9 @@ test('Handle windows', async({page, context}) => {
     await page.waitForLoadState('load');
     // to wait for new tab
     const newTab = context.waitForEvent('page');
+    // click the link which opens a new tab
     await page.click('button[title="Learn More"]');
+    // wait for newTab promise to open 
     await newTab;
     const allPages = context.pages();
     await Promise.all(allPages.map(async (newPage) => {
