@@ -114,6 +114,7 @@ Output: resultArray = [1, 2, 3, 4, 5, 6]
 
 let inputArray = [1, 2, 3, 4, 2, 5, 6, 1, 6];
 reoveDuplicates(inputArray);
+sortAnArray(inputArray);
 
 function reoveDuplicates(inputArray) {
     let result = [];
@@ -123,4 +124,9 @@ function reoveDuplicates(inputArray) {
         }    
     }
     console.log("Removed duplicates from array: " + result);  
+}
+
+function sortAnArray(inputArray) {
+    inputArray.sort();
+    console.log( "After sorting an array: " + inputArray);
 }
