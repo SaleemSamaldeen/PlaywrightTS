@@ -8,4 +8,7 @@ test('Handle Alerts', async( {page}) => {
         dialog.accept();
     });
 
+
+    //By default, dialogs are auto-dismissed by Playwright, so you don't have to handle them. 
+    //However, you can register a dialog handler before the action that triggers the dialog to either dialog.accept() or dialog.dismiss() it.
 });
